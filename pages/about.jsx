@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Link from 'next/link'
 
 export default function AboutPage() {
   return (
@@ -16,7 +14,8 @@ export default function AboutPage() {
       <main className={styles.main}>
         <div className={styles.description}>
           <h1 className={styles.title}>
-            Go to <a href='/'>Home</a>
+            {/* Go to <a href='/'>Home</a> */}
+            Go to <Link href="/">Home</Link>
           </h1>
         </div>
       </main>
